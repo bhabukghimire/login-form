@@ -1,0 +1,272 @@
+ <!DOCTYPE html>
+<html>
+<head>
+	<title>input form</title>
+</head>
+<body>
+
+<h2 style="color: white;text-align: center;font-size: 40px; background-color:lime"> FILL THE FORM </h2>
+
+<style type="text/css">  
+ body{
+ 	background-image: url(51.jpg);
+ 	
+ 	background-repeat: no-repeat;
+ 	background-position: left;
+ 	background-size: 1600px; 
+animation: backgroundanimation 120s linear infinite;
+
+ } 
+
+ h2{
+ 	animation: bhabuk 30s linear infinite;
+ }@keyframes bhabuk{
+			0%{
+			color: lightblue;
+			
+			border-radius: 300px;
+			border-color: red;
+			border-style: groove;
+			border-width: 3px;
+			}
+			10%{
+			color: yellow;
+				transform: rotateX(720deg);
+			
+			border-radius: 300px;
+			border-color: silver;
+			border-style: solid;
+			border-width: 3px;
+			
+			}
+			20%{
+			color: yellow;
+			
+		
+			border-radius: 300px;
+			border-color: rgb(35, 19, 182);
+			border-style: ridge;
+			border-width: 3px;
+			
+			}
+			30%{
+			color: red;
+			
+	transform: rotateX(-720deg);
+			border-radius: 300px;
+			border-color: rgb(255, 0, 106);
+			border-style: groove;
+			border-width: 3px;
+			
+			}
+			50%{
+			color: green;
+			
+		
+			border-radius: 300px;
+			border-color: blue;
+			border-style: groove;
+			border-width: 3px;
+			
+			}
+
+			60%{
+			color:yellow;
+		
+			
+			border-radius: 300px;
+			border-color: red;
+			border-style: ridge;
+			border-width: 3px;
+		
+			}
+			70%{
+			color: blue;
+			
+				
+			transform: rotateY(720deg);
+			border-radius: 300px;
+			border-color: maroon;
+			border-style: solid;
+			border-width: 3px;
+			}
+			80%{
+			color: olive;
+			
+		
+			border-radius: 300px;
+			border-color: magenta;
+			border-style: groove;
+			border-width: 3px;
+			
+			}
+			90%{
+			color: silver;
+			
+			
+			border-radius: 300px;
+			border-color: lime;
+			border-style: double;
+			border-width: 3px;
+			
+			}
+			100%{
+			color: rgb(94, 128, 0);
+			transform: rotateY(-720deg);
+			
+			border-radius: 300px;
+			border-color: pink;
+			border-style: ridge;
+			border-width: 3px;
+			
+			}
+		}
+ .type{
+ 	color: white;
+ 	text-shadow: lime;
+ 	text-align: center;
+ 	font-size: 30px;
+ 	
+ }
+  .submit:hover{
+        background-color: green;
+        border-color: black;
+        border-radius: 200px;
+        border-style: ridge;
+        border-width: 30px;
+        
+}
+ .reset:hover{
+        background-color:red;
+        
+        border-color: black;
+        border-radius: 200px;
+        border-style: dashed;
+    
+        border-width: 2px;
+    }
+    .type input:hover{
+    	background-color: pink;
+    	font-size: 20px;
+    	color: black;
+    	
+    	border-color: silver;
+        border-radius: 200px;
+        border-style: dashed;
+        border-width: 2px;
+    }
+
+</style>
+ <h6 id="bb"></h6>
+
+<div class="type"  >
+    
+	<input type="text" id="name" placeholder="Enter Name" style="border-width: 2px;border-color: gold;border-style: solid;text-align: center; border-radius: 200px;letter-spacing: 0px;"> <br>
+	<input type="txt" id="nae" placeholder=" Last Name" style="border-width: 2px;text-align: center; border-color: gold;border-style: solid; border-radius: 200px;"> <br>
+	
+	<input type="password" minlength="5" id="Password" placeholder="Password" style="border-width: 2px; text-align: center;border-color: gold;border-style: solid;border-radius: 200px;" /><br>
+	
+	<input type="name" id="Email" placeholder="Email /Phone no" style="border-width: 2px;border-color: gold;text-align: center;border-style: solid;border-radius: 200px;"> <br>
+	
+	<input type="name" id="Occupation" placeholder="Occupation" style="border-width: 2px;border-color: gold;text-align: center;border-style: solid;border-radius: 200px;"> <br>
+	
+	<input type="name" id="Address" placeholder="Address" style="border-width: 2px;border-color: gold;border-style: solid;text-align: center;border-radius: 200px;"> <br>
+	<input type="Password" id="pass" placeholder="Re-enter password" style="border-width: 2px;border-color: gold;text-align: center;border-style: solid;border-radius: 200px;"> <br>
+	<input type="date" id="name" placeholder="Birth Date" style="border-width: 2px;border-color: gold;border-style: solid;text-align: center; border-radius: 200px;letter-spacing: 0px;"> <br>
+
+	
+	<caption style="font-size: 25px; color: white;text-align: center;" id="sex">Sex</caption><br>
+	<input type="radio" name="sex" value="male"><label style="font-size: 20px; color: white;">male</label><br>
+	<input type="radio" name="sex" value="female"><label style="font-size: 20px; color: white;">female</label><br>
+	<input type="radio" name="sex" value="none" ><label style="font-size: 20px; color: white;">none</label>
+	<br>
+	
+	<input type="number" id="Age" style="font-size: 14px; width: 80px; border-width: 2px;text-align: center;border-color: gold;border-style: solid;border-radius: 200px;"  placeholder="Age" > <br>
+	<br>
+
+	<button onclick="bhabuk()" style="font-size: 20px; border-width: 2px;color: blue; border-color:black;border-style:ridge;border-radius: 200px;" class="submit">SUBMIT</button>
+	<button onclick="bhabuks()" style="font-size: 20px; border-width: 2px;color: blue; border-color: maroon;border-style: groove;border-radius: 200px;" class="reset">RESET</button>
+	
+
+
+
+<h3 id="bhabs" style="color: lime; font-family: cursive;font-size: 40px; display: none;"><a href="navbar.html" style="text-decoration: none;"> click me to proceed</a> </h3>
+</div>
+<script type="text/javascript">
+	function bhabuk() {
+		 nn = document.getElementById('name').value;
+          re = document.getElementById('pass').value;
+          
+		 pp = document.getElementById('Password').value;
+		 ee = document.getElementById('Email').value;
+         oo = document.getElementById('Occupation').value;
+         aa= document.getElementById('Address').value;
+        age = document.getElementById('Age').value;
+        
+        
+		 if (nn=="" || pp=="" || ee=="" || re=="") {
+		 	alert("input cannot be empty");
+		 	}
+		 	
+		 	else if(document.getElementById('pass').value!=document.getElementById('Password').value) {
+	alert("passwords are different")
+}
+else{
+		 	document.getElementById('bhabs').style.display="block";
+		 		
+		 	}
+
+
+		 	while(age >100){
+		 		alert(";hey are you really over 100 year old")
+		 	}
+
+ 
+	}
+	function bhabuks(){
+		nn = document.getElementById('name').value=""
+
+		 pp = document.getElementById('Password').value=""
+		 ee = document.getElementById('Email').value=""
+         oo = document.getElementById('Occupation').value=""
+         aa= document.getElementById('Address').value=""
+        age = document.getElementById('Age').value=""
+        document.getElementById('bhabs').style.display="none"
+         re = document.getElementById('pass').value=""
+
+	}
+	document.addEventListener("keydown" , moveee)
+function moveee(n) {
+	if (n.keyCode==13) {
+		nn = document.getElementById('name').value;
+          re = document.getElementById('pass').value;
+          
+		 pp = document.getElementById('Password').value;
+		 ee = document.getElementById('Email').value;
+         oo = document.getElementById('Occupation').value;
+         aa= document.getElementById('Address').value;
+        age = document.getElementById('Age').value;
+        
+        
+		 if (nn=="" || pp=="" || ee=="" || re=="") {
+		 	alert("input cannot be empty");
+		 	}
+		 	
+		 	else if(document.getElementById('pass').value!=document.getElementById('Password').value) {
+	alert("passwords are different")
+}
+else{
+		 	document.getElementById('bhabs').style.display="block";
+		 		
+		 	}
+
+
+	}
+}
+
+
+
+</script>
+
+</body>
+</html>
